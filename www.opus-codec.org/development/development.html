@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <link rel="stylesheet" title="Default" media="screen"
+       href="../css/screen.css" type="text/css">
+ <link rel="stylesheet" type="text/css" href="dashboard.css" />
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+ <script type="text/javascript" src="js/jquery.jsonp-2.1.4.min.js"></script>
+ <title>Opus Codec</title>
+</head>
+<body>
+
+
+<!-- Copyright © 2008. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.1.2.1052</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  01/26/15 21:25:51.<br>
+<b>Address:</b> <a class="info" href="http://www.opus-codec.org/development/">http://www.opus-codec.org/development/</a><br>
+<b>Title:</b> Opus Codec &nbsp;&bull;&nbsp; <b>Size:</b> 8714<br></div>
+<!-- /Copyright © 2008. Spidersoft Ltd -->
+
+
+<div id="thepage">
+
+<div id="navbar">
+
+<div id="thelogo">
+  <h1><a href="../www.opus-codec.html"><img src="../images/opus-112.png" alt="Opus Codec"
+         width=112 height=64></a></h1>
+</div>
+
+  <ul>
+    <li id="home_"><a href="../www.opus-codec.html">Home</a></li>
+    <li id="downloads_"><a href="../downloads/downloads.html">Downloads</a></li>
+    <li id="documentation_"><a href="../docs/docs.html">Documentation</a></li>
+    <li id="presentations_"><a href="../presentations/presentations.html">Presentations</a></li>
+    <li id="development_"><a href="development.html">Development</a></li>
+    <li id="comparison_"><a href="../comparison/comparison.html">Comparison</a></li>
+    <li id="examples_"><a href="../examples/examples.html">Examples</a></li>
+    <li id="faq_"><a href="https://wiki.xiph.org/OpusFAQ">Opus FAQ</a></li>
+    <li id="license_"><a href="../license/license.html">License</a></li>
+    <li id="contact_"><a href="../contact/contact.html">Contact</a></li>
+  </ul>
+
+</div>
+
+<div id="main">
+<div id="content">
+
+<!-- end header -->
+
+<h1>Development</h1>
+
+<h2>Discussion</h2>
+
+<p>Development chat takes place on <a href="irc://irc.freenode.net/opus">#opus on irc.freenode.net</a>
+       (&rarr;<a href="" onclick="document.getElementById('chatbox').innerHTML='<iframe src=../www.opus-codec.html'http://webchat.freenode.net/?channels=opus\' width=800 height=600/>';return false;">web interface</a>)
+</p>
+
+<div id="chatbox" style="text-align:center;"></div>
+
+<p>The Xiph.Org wiki has an <a href="https://wiki.xiph.org/OPUS_TODO">Opus TODO</a> page, and the <a href="http://tools.ietf.org/wg/codec/">IETF Codec WG page</a> has
+list archives, meeting minutes, and technical presentations. Monty's <a href="http://people.xiph.org/~xiphmont/demo/celt/demo.html">CELT demo page</a> provides a broad
+overview of the MDCT layer of Opus.</p>
+
+
+<h2>Source code repository</h2>
+
+<b>Master git repository</b>: &nbsp;&nbsp;&nbsp;<span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=opus.git">git://git.opus-codec.org/opus.git</a></span>
+<ul style="margin-top:0;list-style-type: none;background-image:url('tree.png');background-repeat:no-repeat;padding-left:26px">
+   <li>Branch <a href="http://git.xiph.org/?p=opus.git;a=shortlog;h=refs/heads/1.0.x">1.0.x</a> has the stable 1.0.x releases after master started working on 1.1</li>
+   <li><b>Snapshots:</b>
+       <ul>
+          <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=HEAD;sf=tgz">opus-master.tar.gz</a></li>
+          <li><a href="http://git.xiph.org/?p=opus.git;a=snapshot;h=1.0.x;sf=tgz">opus-1.0.x-branch.tar.gz</a></li>
+       </ul></li>
+<!--
+    <li><b>Developer personal trees:</b>
+      <ul>
+         <li><a href="http://git.xiph.org/?p=users/jm/opus.git">Jean-Marc Valin</a></li>
+         <li><a href="http://git.xiph.org/?p=users/greg/opus.git">Greg Maxwell</a></li>
+         <li><a href="http://git.xiph.org/?p=users/giles/opus.git">Ralph Giles</a></li>
+      </ul></li>
+-->
+</ul>
+
+<p>See the <a href="../docs/docs.html">documentation</a> for an API reference
+and test vectors for verifying your implementation.</p>
+
+<h2>Opus-tools</h2>
+<p>Opus-tools includes a set of tools for encoding/decoding Opus to and from wav. 
+The files the tools produce are suitable for distribution with support for seeking, metadata, and multichannel. 
+See also: the <a href="http://wiki.xiph.org/OggOpus">OggOpus mapping</a>.</p>
+
+<blockquote><span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=opus-tools.git">git://git.xiph.org/opus-tools.git</a></span></blockquote>
+
+<p>Manpages: <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusenc.html">opusenc</a>, <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusdec.html">opusdec</a>, <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-tools/ws/man/opusinfo.html">opusinfo</a></p>
+
+<h2>Opusfile</h2>
+<p>Opusfile provides a high-level API for decoding and seeking within .opus files similar to what
+libvorbisfile provides for Vorbis.
+
+<blockquote><span style="white-space: pre;font-family: monospace;">$ git clone <a href="http://git.xiph.org/?p=opusfile.git">git://git.xiph.org/opusfile.git</a></span></blockquote>
+
+<h2>Continuous integration</h2>
+
+<p>The <a href="https://mf4.xiph.org/jenkins/view/opus/">Opus continuous integration server</a>
+performs automated builds and tests of Opus on many platforms and configurations.<br/>
+Some of the builds run on remote systems and may fail from time to time due to connectivity problems.
+The console output is available and usually very informative when builds fail.</p>
+
+<ul>
+  <li>Test coverage reports: <a href="https://mf4.xiph.org/jenkins/job/opus-coverage/ws/coverage/index.html">
+    Floating-point</a>, <a href="https://mf4.xiph.org/jenkins/job/opus-coverage-fixed/ws/coverage/index.html">fixed-point</a></li>
+  <li>Latest rendered codec specification: <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-draft/ws/doc/draft-ietf-codec-opus.txt">Text</a>,
+    <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-draft/ws/doc/draft-ietf-codec-opus.html">HTML</a></li>
+  <li>Static analysis results: <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus-scan-build/ws/scan-build/current/index.html">scan-build</a>,
+    <a href="https://mf4.xiph.org/jenkins/job/opus-cppcheck/cppcheckResult">cppcheck</a>.</li>
+  <li>Libopus API documentation: <a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/html/index.html">HTML</a>, 
+<a href="https://mf4.xiph.org/jenkins/view/opus/job/opus/ws/doc/latex/refman.pdf">PDF</a></li>
+</ul>
+
+<div id="CIcontent"></div>
+<br/>
+
+<script type="text/javascript">
+//Loosely based on https://github.com/tuo/jenkins-monitor
+var base_url = "https://mf4.xiph.org/jenkins/view/opus";
+var jobs_to_be_excluded = ["baz"];
+
+var jenkinsDashboard = {
+	composeHtmlFragement: function(jobs){
+		var fragment = document.createDocumentFragment();
+		var fragment = "<div><ul>";
+		$.each(jobs, function(){
+			if(($.inArray(this.name, jobs_to_be_excluded) == -1)){
+				if(this.color=="red"){
+                                 fragment += ("<li class='CI CI" + this.color + "'><a href=" + this.url + " class='CI'>" + this.name + "</a><span class='CIcon'><a href='" + this.url +"lastBuild/console'><img src='terminal.png' class='CIcon' width=16 height=16 alt='[console]'/></a></span></li>");
+                                } else {
+                                 fragment += ("<li class='CI CI" + this.color + "'><a href=" + this.url + " class='CI'>" + this.name + "</a></li>");
+                                }
+			}
+		});
+		dashboardLastUpdatedTime = new Date();
+		fragment +="</ul></div><br style='clear:both;' /><span class='CItime'>Updated: " + dashboardLastUpdatedTime.toString()  + "</span>";
+		$("#CIcontent").html(fragment);
+	},
+	updateBuildStatus : function(data) {
+		jenkinsDashboard.composeHtmlFragement(data.jobs);
+	}
+}
+
+$(document).ready(function(){	
+	ci_url = base_url + "/api/json";
+	var counter = 0;
+	var lastData = null;
+	var monitor = function(){
+	 counter++;
+	 $.jsonp({
+	        url: ci_url + "?format=json&jsonp=?",
+	        dataType: "jsonp",
+	        // callbackParameter: "jsonp",
+	        timeout: 10000,
+	        beforeSend: function(xhr) {
+	        	if(counter == 1){
+	        	        $("#CIcontent").html("<h2 id='loading'>Opus CI monitor loading...</h2>");
+	        	};  	
+	        },
+	        success: function(data, status){
+	        	jenkinsDashboard.updateBuildStatus(data);
+	        },
+	        error: function(XHR, textStatus, errorThrown){
+	        	if($("#error_loading").length <= 0){
+	        		$("#CIcontent").html('<h1 id="error_loading"> Connection failed, reloading Retrying........</h1>');
+	        	}
+	        }
+	    });
+	};
+	monitor();
+        var auto_refresh = setInterval(monitor, 30000);
+})
+</script>
+
+<!-- page footer -->
+
+</div> <!-- end "content" -->
+
+<div id="copyright">
+  <p>Copyright &copy; 2011-2014.</p>
+<p>
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="../../i.creativecommons.org/l/by/3.0/80x15.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+</p>
+</div>
+
+</div> <!-- end "main" -->
+</div> <!-- end "thepage" -->
+
+</body>
+</html>
+
