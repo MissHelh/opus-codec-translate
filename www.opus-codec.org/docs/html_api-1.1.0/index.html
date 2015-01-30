@@ -26,7 +26,7 @@
   </td>
   <td><table style="padding-left: 0.5em;" cellspacing="0" cellpadding="0"><tbody>
    <tr><td>
-   <div id="projectbrief">Opus audio codec (RFC 6716): API and operations manual</div>
+   <div id="projectbrief">Opus 音频编解码器(RFC 6716): API和操作手册</div>
    </td></tr>
   <td><span id="projectnumber">1.1</span>
    </td></tr>
@@ -42,9 +42,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="index.html"><span>主&#160;页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>宏</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,34 +83,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Opus </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The Opus codec is designed for interactive speech and audio transmission over the Internet.It is designed by the IETF Codec Working Group and incorporates technology from Skype's SILK codec and Xiph.Org's CELT codec.</p>
-<p>The Opus codec is designed to handle a wide range of interactive audio applications, including Voice over IP, videoconferencing, in-game chat, and even remote live music performances. It can scale from low bit-rate narrowband speech to very high quality stereo music. Its main features are:</p>
+<div class="textblock"><p>Opus编解码器被设计为基于网络的交互语音和音频传输。由IETF工作组结合Skype的SILK和Xiph.Org的CELT解码器设计而成。</p>
+<p>Opus编解码器被设计用于处理各种交互式音频应用，包括IP语音，视频会议，游戏内聊天，远程的现场音乐表演等。处理范围从低比特率窄带语音到高质量立体声音乐。其主要特性有：</p>
 <ul>
-<li>Sampling rates from 8 to 48 kHz </li>
-<li>Bit-rates from 6 kb/s to 510 kb/s </li>
-<li>Support for both constant bit-rate (CBR) and variable bit-rate (VBR) </li>
-<li>Audio bandwidth from narrowband to full-band </li>
-<li>Support for speech and music </li>
-<li>Support for mono and stereo </li>
-<li>Support for multichannel (up to 255 channels) </li>
-<li>Frame sizes from 2.5 ms to 60 ms </li>
-<li>Good loss robustness and packet loss concealment (PLC) </li>
-<li>Floating point and fixed-point implementation</li>
+<li>8 kHz ~ 48 kHz 采样率</li>
+<li>6 kb/s ~ 510 kb/s 比特率</li>
+<li>支持静态码率(CBR)和动态码率(VBR)</li>
+<li>音频带宽从窄带到全频带</li>
+<li>支持语音和音乐</li>
+<li>支持单声道和立体声</li>
+<li>支持多频道(最多255频道)</li>
+<li>动态可调比特率、音频带宽、帧大小</li>
+<li>良好的鲁棒性和数据包丢失隐藏(PLC)</li>
+<li>浮点和定点实现</li>
 </ul>
-<p>Documentation sections: </p>
+<p>文档：</p>
 <ul>
-<li><a class="el" href="group__opus__encoder.html">Opus Encoder</a> </li>
-<li><a class="el" href="group__opus__decoder.html">Opus Decoder</a> </li>
+<li><a class="el" href="group__opus__encoder.html">Opus 编码</a> </li>
+<li><a class="el" href="group__opus__decoder.html">Opus 解码</a> </li>
 <li><a class="el" href="group__opus__repacketizer.html">Repacketizer</a> </li>
-<li><a class="el" href="group__opus__multistream.html">Opus Multistream API</a> </li>
+<li><a class="el" href="group__opus__multistream.html">Opus 多频道 API</a> </li>
 <li><a class="el" href="group__opus__libinfo.html">Opus library information functions</a> </li>
-<li><a class="el" href="group__opus__custom.html">Opus Custom</a> </li>
+<li><a class="el" href="group__opus__custom.html">Opus 自定义</a> </li>
 </ul>
 </div></div><!-- contents -->
 
 <hr class="footer"/>
 <table width="100%"><tbody><tr><td>
-For more information visit the <a href="http://opus-codec.org/">Opus Website</a>.
+更多信息查看 <a href="http://opus-codec.org/">Opus 站点</a>
 </td><td><address class="footer"><small>
 &copy;2013<br/>
 Generated on Wed Dec 4 2013 15:16:40 for Opus by <a href="http://www.doxygen.org/index.html">
